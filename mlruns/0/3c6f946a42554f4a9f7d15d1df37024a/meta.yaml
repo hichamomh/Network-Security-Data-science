@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hicha/Documents/2_Apprentissage/Projects/Network-Security-Data-science/mlruns/0/3c6f946a42554f4a9f7d15d1df37024a/artifacts
+end_time: 1731780963721
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3c6f946a42554f4a9f7d15d1df37024a
+run_name: painted-conch-616
+run_uuid: 3c6f946a42554f4a9f7d15d1df37024a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731780958178
+status: 3
+tags: []
+user_id: hicha

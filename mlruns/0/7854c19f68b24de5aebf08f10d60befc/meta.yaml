@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hicha/Documents/2_Apprentissage/Projects/Network-Security-Data-science/mlruns/0/7854c19f68b24de5aebf08f10d60befc/artifacts
+end_time: 1731780958133
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7854c19f68b24de5aebf08f10d60befc
+run_name: abrasive-zebra-203
+run_uuid: 7854c19f68b24de5aebf08f10d60befc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731780952164
+status: 3
+tags: []
+user_id: hicha
