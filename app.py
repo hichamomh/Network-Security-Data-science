@@ -68,11 +68,11 @@ async def predict_route(request: Request,file: UploadFile = File(...)):
         network_model = NetworkModel(preprocessor=preprocesor,model=final_model)
         print(df.iloc[0])
         y_pred = network_model.predict(df)
-        #print(y_pred)
+         
         df['predicted_column'] = y_pred
-        #print(df['predicted_column'])
+        
         df['predicted_column'].replace(-1, 0)
-        #return df.to_json()
+        
         df.to_csv('prediction_output/output.csv')
         table_html = df.to_html(classes='table table-striped')
         #print(table_html)
