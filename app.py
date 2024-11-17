@@ -3,7 +3,6 @@ import os
 
 import certifi
 ca = certifi.where()
-
 from dotenv import load_dotenv
 load_dotenv()
 mongo_db_url = os.getenv("MONGODB_URL_KEY")
@@ -34,13 +33,13 @@ collection = database[DATA_INGESTION_COLLECTION_NAME]
 app = FastAPI()
 origins = ["*"]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates(directory="./templates")
@@ -80,5 +79,5 @@ async def predict_route(request: Request,file: UploadFile = File(...)):
     except Exception as e:
             raise NetworkSecurityException(e,sys)
 
-if __name__=="__main__":
-    app_run(app,host="0.0.0.0",port=8000)
+# if __name__=="__main__":
+#     app_run(app,host="0.0.0.0",port=8000)
