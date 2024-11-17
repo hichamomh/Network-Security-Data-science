@@ -19,9 +19,7 @@ from uvicorn import run as app_run
 from fastapi.responses import Response
 from starlette.responses import RedirectResponse
 import pandas as pd
-
 from Networksecurity.utils.main_utils.utils import load_object
-
 from Networksecurity.utils.ml_utils.model.estimator import NetworkModel
 
 
