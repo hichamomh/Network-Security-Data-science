@@ -33,13 +33,13 @@ collection = database[DATA_INGESTION_COLLECTION_NAME]
 app = FastAPI()
 origins = ["*"]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates(directory="./templates")
