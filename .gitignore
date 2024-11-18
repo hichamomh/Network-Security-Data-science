@@ -2,5 +2,4 @@ venv/
 Artifacts/
 logs
 
- 
- 
+.env/
