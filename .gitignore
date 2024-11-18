@@ -1,7 +1,6 @@
 venv/
 Artifacts/
 logs/
-
-.env/
+.env
  
  
